@@ -31,23 +31,22 @@ Quantifying Missing Data
 
 Insight:
 
-Column C2 has the highest number of missing values
-Removing Missing Values
-df1.dropna() → Removes rows with missing values
-df1.dropna(axis=1) → Removes columns with missing values
+- Column C2 has the highest number of missing values
+- Removing Missing Values
+- df1.dropna() → Removes rows with missing values
+- df1.dropna(axis=1) → Removes columns with missing values
 
 Observation:
 
-Dropping rows may cause data loss
-Dropping columns removes entire features
-Filling Missing Values (Imputation)
-df1.fillna(0) → Replace with constant
-df1.fillna(df1.mean()) → Column mean
-df1.fillna(df1.mean(axis=1)) → Row-wise mean
+- Dropping rows may cause data loss
+- Dropping columns removes entire features
+- Filling Missing Values (Imputation)
+- df1.fillna(0) → Replace with constant
+- df1.fillna(df1.mean()) → Column mean
+- df1.fillna(df1.mean(axis=1)) → Row-wise mean
 
 Insight:
-
-Mean imputation preserves dataset size
+- Mean imputation preserves dataset size
 ###### _Dataset 2: Data Cleaning and Transformation_
 
 This dataset contains inconsistent entries and mixed data types.
